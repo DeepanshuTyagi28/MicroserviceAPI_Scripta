@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 1, Errors: 0, Skipped: 8, Time elapsed: 1.251 s <<< FAILURE! - in TestSuite
+com.ScriptaInsight.Testcases.DiscontinueDrugAPI.DeleteDrugid  Time elapsed: 1.115 s  <<< FAILURE!
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: 
+Communications link failure
+
+The last packet successfully received from the server was 107 milliseconds ago.  The last packet sent successfully to the server was 92 milliseconds ago.
+	at com.ScriptaInsight.Testcases.DiscontinueDrugAPI.DeleteDrugid(DiscontinueDrugAPI.java:27)
+Caused by: javax.net.ssl.SSLHandshakeException: No appropriate protocol (protocol is disabled or cipher suites are inappropriate)
+	at com.ScriptaInsight.Testcases.DiscontinueDrugAPI.DeleteDrugid(DiscontinueDrugAPI.java:27)
+

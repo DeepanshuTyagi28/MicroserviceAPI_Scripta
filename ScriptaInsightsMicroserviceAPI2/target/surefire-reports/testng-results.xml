@@ -1,0 +1,744 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="0" failed="0" skipped="8">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-10-06T11:54:21 IST" name="Suite" finished-at="2022-10-06T11:54:22 IST" duration-ms="883">
+    <groups>
+    </groups>
+    <test started-at="2022-10-06T11:54:21 IST" name="Test" finished-at="2022-10-06T11:54:22 IST" duration-ms="883">
+      <class name="com.ScriptaInsight.Testcases.DrugNdcListByDrugId">
+        <test-method signature="TC03_Invalid_DrugId()[pri:0, instance:com.ScriptaInsight.Testcases.DrugNdcListByDrugId@66d3eec0]" started-at="2022-10-06T11:54:22 IST" name="TC03_Invalid_DrugId" finished-at="2022-10-06T11:54:22 IST" duration-ms="0" status="SKIP">
+          <exception class="com.mysql.jdbc.exceptions.jdbc4.CommunicationsException">
+            <message>
+              <![CDATA[Communications link failure
+
+The last packet successfully received from the server was 107 milliseconds ago.  The last packet sent successfully to the server was 92 milliseconds ago.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 107 milliseconds ago.  The last packet sent successfully to the server was 92 milliseconds ago.
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:989)
+at com.mysql.jdbc.ExportControlled.transformSocketToSSLSocket(ExportControlled.java:164)
+at com.mysql.jdbc.MysqlIO.negotiateSSLConnection(MysqlIO.java:4901)
+at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1659)
+at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2205)
+at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2236)
+at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2035)
+at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:790)
+at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:400)
+at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+at com.ScriptaInsight.base.DataBaseConnection.DeleteDrugid(DataBaseConnection.java:16)
+at com.ScriptaInsight.Testcases.DiscontinueDrugAPI.DeleteDrugid(DiscontinueDrugAPI.java:27)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:643)
+at org.testng.TestRunner.beforeRun(TestRunner.java:632)
+at org.testng.TestRunner.run(TestRunner.java:594)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+Caused by: javax.net.ssl.SSLHandshakeException: No appropriate protocol (protocol is disabled or cipher suites are inappropriate)
+at java.base/sun.security.ssl.HandshakeContext.<init>(HandshakeContext.java:172)
+at java.base/sun.security.ssl.ClientHandshakeContext.<init>(ClientHandshakeContext.java:98)
+at java.base/sun.security.ssl.TransportContext.kickstart(TransportContext.java:238)
+at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:434)
+at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:412)
+at com.mysql.jdbc.ExportControlled.transformSocketToSSLSocket(ExportControlled.java:149)
+... 48 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.mysql.jdbc.exceptions.jdbc4.CommunicationsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC03_Invalid_DrugId -->
+        <test-method signature="TC01_Existing_DrugId()[pri:0, instance:com.ScriptaInsight.Testcases.DrugNdcListByDrugId@66d3eec0]" started-at="2022-10-06T11:54:22 IST" name="TC01_Existing_DrugId" finished-at="2022-10-06T11:54:22 IST" duration-ms="0" status="SKIP">
+          <exception class="com.mysql.jdbc.exceptions.jdbc4.CommunicationsException">
+            <message>
+              <![CDATA[Communications link failure
+
+The last packet successfully received from the server was 107 milliseconds ago.  The last packet sent successfully to the server was 92 milliseconds ago.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 107 milliseconds ago.  The last packet sent successfully to the server was 92 milliseconds ago.
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:989)
+at com.mysql.jdbc.ExportControlled.transformSocketToSSLSocket(ExportControlled.java:164)
+at com.mysql.jdbc.MysqlIO.negotiateSSLConnection(MysqlIO.java:4901)
+at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1659)
+at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2205)
+at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2236)
+at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2035)
+at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:790)
+at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:400)
+at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+at com.ScriptaInsight.base.DataBaseConnection.DeleteDrugid(DataBaseConnection.java:16)
+at com.ScriptaInsight.Testcases.DiscontinueDrugAPI.DeleteDrugid(DiscontinueDrugAPI.java:27)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:643)
+at org.testng.TestRunner.beforeRun(TestRunner.java:632)
+at org.testng.TestRunner.run(TestRunner.java:594)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+Caused by: javax.net.ssl.SSLHandshakeException: No appropriate protocol (protocol is disabled or cipher suites are inappropriate)
+at java.base/sun.security.ssl.HandshakeContext.<init>(HandshakeContext.java:172)
+at java.base/sun.security.ssl.ClientHandshakeContext.<init>(ClientHandshakeContext.java:98)
+at java.base/sun.security.ssl.TransportContext.kickstart(TransportContext.java:238)
+at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:434)
+at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:412)
+at com.mysql.jdbc.ExportControlled.transformSocketToSSLSocket(ExportControlled.java:149)
+... 48 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.mysql.jdbc.exceptions.jdbc4.CommunicationsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC01_Existing_DrugId -->
+        <test-method signature="TC02_Non_Existing_DrugId()[pri:0, instance:com.ScriptaInsight.Testcases.DrugNdcListByDrugId@66d3eec0]" started-at="2022-10-06T11:54:22 IST" name="TC02_Non_Existing_DrugId" finished-at="2022-10-06T11:54:22 IST" duration-ms="0" status="SKIP">
+          <exception class="com.mysql.jdbc.exceptions.jdbc4.CommunicationsException">
+            <message>
+              <![CDATA[Communications link failure
+
+The last packet successfully received from the server was 107 milliseconds ago.  The last packet sent successfully to the server was 92 milliseconds ago.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 107 milliseconds ago.  The last packet sent successfully to the server was 92 milliseconds ago.
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:989)
+at com.mysql.jdbc.ExportControlled.transformSocketToSSLSocket(ExportControlled.java:164)
+at com.mysql.jdbc.MysqlIO.negotiateSSLConnection(MysqlIO.java:4901)
+at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1659)
+at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2205)
+at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2236)
+at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2035)
+at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:790)
+at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:400)
+at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+at com.ScriptaInsight.base.DataBaseConnection.DeleteDrugid(DataBaseConnection.java:16)
+at com.ScriptaInsight.Testcases.DiscontinueDrugAPI.DeleteDrugid(DiscontinueDrugAPI.java:27)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:643)
+at org.testng.TestRunner.beforeRun(TestRunner.java:632)
+at org.testng.TestRunner.run(TestRunner.java:594)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+Caused by: javax.net.ssl.SSLHandshakeException: No appropriate protocol (protocol is disabled or cipher suites are inappropriate)
+at java.base/sun.security.ssl.HandshakeContext.<init>(HandshakeContext.java:172)
+at java.base/sun.security.ssl.ClientHandshakeContext.<init>(ClientHandshakeContext.java:98)
+at java.base/sun.security.ssl.TransportContext.kickstart(TransportContext.java:238)
+at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:434)
+at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:412)
+at com.mysql.jdbc.ExportControlled.transformSocketToSSLSocket(ExportControlled.java:149)
+... 48 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.mysql.jdbc.exceptions.jdbc4.CommunicationsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC02_Non_Existing_DrugId -->
+        <test-method signature="TC04_Invalid_Authorization_token()[pri:0, instance:com.ScriptaInsight.Testcases.DrugNdcListByDrugId@66d3eec0]" started-at="2022-10-06T11:54:22 IST" name="TC04_Invalid_Authorization_token" finished-at="2022-10-06T11:54:22 IST" duration-ms="0" status="SKIP">
+          <exception class="com.mysql.jdbc.exceptions.jdbc4.CommunicationsException">
+            <message>
+              <![CDATA[Communications link failure
+
+The last packet successfully received from the server was 107 milliseconds ago.  The last packet sent successfully to the server was 92 milliseconds ago.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 107 milliseconds ago.  The last packet sent successfully to the server was 92 milliseconds ago.
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:989)
+at com.mysql.jdbc.ExportControlled.transformSocketToSSLSocket(ExportControlled.java:164)
+at com.mysql.jdbc.MysqlIO.negotiateSSLConnection(MysqlIO.java:4901)
+at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1659)
+at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2205)
+at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2236)
+at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2035)
+at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:790)
+at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:400)
+at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+at com.ScriptaInsight.base.DataBaseConnection.DeleteDrugid(DataBaseConnection.java:16)
+at com.ScriptaInsight.Testcases.DiscontinueDrugAPI.DeleteDrugid(DiscontinueDrugAPI.java:27)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:643)
+at org.testng.TestRunner.beforeRun(TestRunner.java:632)
+at org.testng.TestRunner.run(TestRunner.java:594)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+Caused by: javax.net.ssl.SSLHandshakeException: No appropriate protocol (protocol is disabled or cipher suites are inappropriate)
+at java.base/sun.security.ssl.HandshakeContext.<init>(HandshakeContext.java:172)
+at java.base/sun.security.ssl.ClientHandshakeContext.<init>(ClientHandshakeContext.java:98)
+at java.base/sun.security.ssl.TransportContext.kickstart(TransportContext.java:238)
+at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:434)
+at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:412)
+at com.mysql.jdbc.ExportControlled.transformSocketToSSLSocket(ExportControlled.java:149)
+... 48 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.mysql.jdbc.exceptions.jdbc4.CommunicationsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC04_Invalid_Authorization_token -->
+      </class> <!-- com.ScriptaInsight.Testcases.DrugNdcListByDrugId -->
+      <class name="com.ScriptaInsight.Testcases.DiscontinueDrugAPI">
+        <test-method is-config="true" signature="DeleteDrugid()[pri:0, instance:com.ScriptaInsight.Testcases.DiscontinueDrugAPI@48f278eb]" started-at="2022-10-06T11:54:21 IST" name="DeleteDrugid" finished-at="2022-10-06T11:54:22 IST" duration-ms="854" status="FAIL">
+          <exception class="com.mysql.jdbc.exceptions.jdbc4.CommunicationsException">
+            <message>
+              <![CDATA[Communications link failure
+
+The last packet successfully received from the server was 107 milliseconds ago.  The last packet sent successfully to the server was 92 milliseconds ago.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 107 milliseconds ago.  The last packet sent successfully to the server was 92 milliseconds ago.
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:989)
+at com.mysql.jdbc.ExportControlled.transformSocketToSSLSocket(ExportControlled.java:164)
+at com.mysql.jdbc.MysqlIO.negotiateSSLConnection(MysqlIO.java:4901)
+at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1659)
+at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2205)
+at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2236)
+at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2035)
+at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:790)
+at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:400)
+at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+at com.ScriptaInsight.base.DataBaseConnection.DeleteDrugid(DataBaseConnection.java:16)
+at com.ScriptaInsight.Testcases.DiscontinueDrugAPI.DeleteDrugid(DiscontinueDrugAPI.java:27)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:643)
+at org.testng.TestRunner.beforeRun(TestRunner.java:632)
+at org.testng.TestRunner.run(TestRunner.java:594)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+Caused by: javax.net.ssl.SSLHandshakeException: No appropriate protocol (protocol is disabled or cipher suites are inappropriate)
+at java.base/sun.security.ssl.HandshakeContext.<init>(HandshakeContext.java:172)
+at java.base/sun.security.ssl.ClientHandshakeContext.<init>(ClientHandshakeContext.java:98)
+at java.base/sun.security.ssl.TransportContext.kickstart(TransportContext.java:238)
+at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:434)
+at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:412)
+at com.mysql.jdbc.ExportControlled.transformSocketToSSLSocket(ExportControlled.java:149)
+... 48 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.mysql.jdbc.exceptions.jdbc4.CommunicationsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteDrugid -->
+        <test-method signature="TC01_Valid_DrugId()[pri:1, instance:com.ScriptaInsight.Testcases.DiscontinueDrugAPI@48f278eb]" started-at="2022-10-06T11:54:22 IST" name="TC01_Valid_DrugId" finished-at="2022-10-06T11:54:22 IST" duration-ms="0" status="SKIP">
+          <exception class="com.mysql.jdbc.exceptions.jdbc4.CommunicationsException">
+            <message>
+              <![CDATA[Communications link failure
+
+The last packet successfully received from the server was 107 milliseconds ago.  The last packet sent successfully to the server was 92 milliseconds ago.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 107 milliseconds ago.  The last packet sent successfully to the server was 92 milliseconds ago.
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:989)
+at com.mysql.jdbc.ExportControlled.transformSocketToSSLSocket(ExportControlled.java:164)
+at com.mysql.jdbc.MysqlIO.negotiateSSLConnection(MysqlIO.java:4901)
+at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1659)
+at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2205)
+at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2236)
+at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2035)
+at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:790)
+at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:400)
+at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+at com.ScriptaInsight.base.DataBaseConnection.DeleteDrugid(DataBaseConnection.java:16)
+at com.ScriptaInsight.Testcases.DiscontinueDrugAPI.DeleteDrugid(DiscontinueDrugAPI.java:27)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:643)
+at org.testng.TestRunner.beforeRun(TestRunner.java:632)
+at org.testng.TestRunner.run(TestRunner.java:594)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+Caused by: javax.net.ssl.SSLHandshakeException: No appropriate protocol (protocol is disabled or cipher suites are inappropriate)
+at java.base/sun.security.ssl.HandshakeContext.<init>(HandshakeContext.java:172)
+at java.base/sun.security.ssl.ClientHandshakeContext.<init>(ClientHandshakeContext.java:98)
+at java.base/sun.security.ssl.TransportContext.kickstart(TransportContext.java:238)
+at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:434)
+at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:412)
+at com.mysql.jdbc.ExportControlled.transformSocketToSSLSocket(ExportControlled.java:149)
+... 48 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.mysql.jdbc.exceptions.jdbc4.CommunicationsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC01_Valid_DrugId -->
+        <test-method signature="TC02_Existing_Discontinued_Drug()[pri:2, instance:com.ScriptaInsight.Testcases.DiscontinueDrugAPI@48f278eb]" started-at="2022-10-06T11:54:22 IST" name="TC02_Existing_Discontinued_Drug" finished-at="2022-10-06T11:54:22 IST" duration-ms="0" status="SKIP">
+          <exception class="com.mysql.jdbc.exceptions.jdbc4.CommunicationsException">
+            <message>
+              <![CDATA[Communications link failure
+
+The last packet successfully received from the server was 107 milliseconds ago.  The last packet sent successfully to the server was 92 milliseconds ago.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 107 milliseconds ago.  The last packet sent successfully to the server was 92 milliseconds ago.
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:989)
+at com.mysql.jdbc.ExportControlled.transformSocketToSSLSocket(ExportControlled.java:164)
+at com.mysql.jdbc.MysqlIO.negotiateSSLConnection(MysqlIO.java:4901)
+at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1659)
+at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2205)
+at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2236)
+at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2035)
+at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:790)
+at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:400)
+at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+at com.ScriptaInsight.base.DataBaseConnection.DeleteDrugid(DataBaseConnection.java:16)
+at com.ScriptaInsight.Testcases.DiscontinueDrugAPI.DeleteDrugid(DiscontinueDrugAPI.java:27)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:643)
+at org.testng.TestRunner.beforeRun(TestRunner.java:632)
+at org.testng.TestRunner.run(TestRunner.java:594)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+Caused by: javax.net.ssl.SSLHandshakeException: No appropriate protocol (protocol is disabled or cipher suites are inappropriate)
+at java.base/sun.security.ssl.HandshakeContext.<init>(HandshakeContext.java:172)
+at java.base/sun.security.ssl.ClientHandshakeContext.<init>(ClientHandshakeContext.java:98)
+at java.base/sun.security.ssl.TransportContext.kickstart(TransportContext.java:238)
+at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:434)
+at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:412)
+at com.mysql.jdbc.ExportControlled.transformSocketToSSLSocket(ExportControlled.java:149)
+... 48 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.mysql.jdbc.exceptions.jdbc4.CommunicationsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC02_Existing_Discontinued_Drug -->
+        <test-method signature="TC03_Invalid_DrugId()[pri:3, instance:com.ScriptaInsight.Testcases.DiscontinueDrugAPI@48f278eb]" started-at="2022-10-06T11:54:22 IST" name="TC03_Invalid_DrugId" finished-at="2022-10-06T11:54:22 IST" duration-ms="1" status="SKIP">
+          <exception class="com.mysql.jdbc.exceptions.jdbc4.CommunicationsException">
+            <message>
+              <![CDATA[Communications link failure
+
+The last packet successfully received from the server was 107 milliseconds ago.  The last packet sent successfully to the server was 92 milliseconds ago.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 107 milliseconds ago.  The last packet sent successfully to the server was 92 milliseconds ago.
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:989)
+at com.mysql.jdbc.ExportControlled.transformSocketToSSLSocket(ExportControlled.java:164)
+at com.mysql.jdbc.MysqlIO.negotiateSSLConnection(MysqlIO.java:4901)
+at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1659)
+at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2205)
+at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2236)
+at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2035)
+at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:790)
+at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:400)
+at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+at com.ScriptaInsight.base.DataBaseConnection.DeleteDrugid(DataBaseConnection.java:16)
+at com.ScriptaInsight.Testcases.DiscontinueDrugAPI.DeleteDrugid(DiscontinueDrugAPI.java:27)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:643)
+at org.testng.TestRunner.beforeRun(TestRunner.java:632)
+at org.testng.TestRunner.run(TestRunner.java:594)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+Caused by: javax.net.ssl.SSLHandshakeException: No appropriate protocol (protocol is disabled or cipher suites are inappropriate)
+at java.base/sun.security.ssl.HandshakeContext.<init>(HandshakeContext.java:172)
+at java.base/sun.security.ssl.ClientHandshakeContext.<init>(ClientHandshakeContext.java:98)
+at java.base/sun.security.ssl.TransportContext.kickstart(TransportContext.java:238)
+at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:434)
+at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:412)
+at com.mysql.jdbc.ExportControlled.transformSocketToSSLSocket(ExportControlled.java:149)
+... 48 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.mysql.jdbc.exceptions.jdbc4.CommunicationsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC03_Invalid_DrugId -->
+        <test-method signature="TC04_Invalid_Authorization_Token()[pri:4, instance:com.ScriptaInsight.Testcases.DiscontinueDrugAPI@48f278eb]" started-at="2022-10-06T11:54:22 IST" name="TC04_Invalid_Authorization_Token" finished-at="2022-10-06T11:54:22 IST" duration-ms="0" status="SKIP">
+          <exception class="com.mysql.jdbc.exceptions.jdbc4.CommunicationsException">
+            <message>
+              <![CDATA[Communications link failure
+
+The last packet successfully received from the server was 107 milliseconds ago.  The last packet sent successfully to the server was 92 milliseconds ago.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 107 milliseconds ago.  The last packet sent successfully to the server was 92 milliseconds ago.
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:989)
+at com.mysql.jdbc.ExportControlled.transformSocketToSSLSocket(ExportControlled.java:164)
+at com.mysql.jdbc.MysqlIO.negotiateSSLConnection(MysqlIO.java:4901)
+at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1659)
+at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2205)
+at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2236)
+at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2035)
+at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:790)
+at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:400)
+at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+at com.ScriptaInsight.base.DataBaseConnection.DeleteDrugid(DataBaseConnection.java:16)
+at com.ScriptaInsight.Testcases.DiscontinueDrugAPI.DeleteDrugid(DiscontinueDrugAPI.java:27)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:643)
+at org.testng.TestRunner.beforeRun(TestRunner.java:632)
+at org.testng.TestRunner.run(TestRunner.java:594)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+Caused by: javax.net.ssl.SSLHandshakeException: No appropriate protocol (protocol is disabled or cipher suites are inappropriate)
+at java.base/sun.security.ssl.HandshakeContext.<init>(HandshakeContext.java:172)
+at java.base/sun.security.ssl.ClientHandshakeContext.<init>(ClientHandshakeContext.java:98)
+at java.base/sun.security.ssl.TransportContext.kickstart(TransportContext.java:238)
+at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:434)
+at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:412)
+at com.mysql.jdbc.ExportControlled.transformSocketToSSLSocket(ExportControlled.java:149)
+... 48 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.mysql.jdbc.exceptions.jdbc4.CommunicationsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC04_Invalid_Authorization_Token -->
+      </class> <!-- com.ScriptaInsight.Testcases.DiscontinueDrugAPI -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

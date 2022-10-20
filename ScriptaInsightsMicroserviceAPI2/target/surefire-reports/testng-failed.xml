@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="Test(failed)" verbose="0">
+    <classes>
+      <class name="com.ScriptaInsight.Testcases.DiscontinueDrugAPI">
+        <methods>
+          <include name="TC03_Invalid_DrugId"/>
+          <include name="TC04_Invalid_Authorization_Token"/>
+          <include name="DeleteDrugid"/>
+          <include name="TC02_Existing_Discontinued_Drug"/>
+          <include name="TC01_Valid_DrugId"/>
+        </methods>
+      </class> <!-- com.ScriptaInsight.Testcases.DiscontinueDrugAPI -->
+      <class name="com.ScriptaInsight.Testcases.DrugNdcListByDrugId">
+        <methods>
+          <include name="TC03_Invalid_DrugId"/>
+          <include name="TC04_Invalid_Authorization_token"/>
+          <include name="TC02_Non_Existing_DrugId"/>
+          <include name="TC01_Existing_DrugId"/>
+        </methods>
+      </class> <!-- com.ScriptaInsight.Testcases.DrugNdcListByDrugId -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
